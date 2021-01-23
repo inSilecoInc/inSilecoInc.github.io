@@ -1,2 +1,0 @@
-# inSilecoInc.github.io
-Website
