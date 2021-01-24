@@ -1,7 +1,77 @@
 baseURL = "https://insilecoinc.github.io/"
 languageCode = "en-us"
-title = "inSileco"
 theme = "forty"
+
+
+defaultContentLanguage = "en"
+
+[languages]
+
+[languages.en]
+  weight = 1
+  title = "inSileco"
+  # [languages.en.params]
+
+    
+    
+[languages.fr]
+  weight = 2
+  title = "inSileco"
+  
+  [languages.fr.params]
+  
+    # [languages.fr.params.error404]
+    #   heading = "Page introuvable"
+    #   text = "SVP aller à"
+    
+    # Banner section
+    [languages.fr.params.banner]
+      title = "inSileco"
+      subtitle = "Nous pouvons vous aider"
+      buttonText = "Plus?"
+  
+    [languages.fr.params.contact]
+      enable = true
+      buttonSend = "Envoyer un message"
+      buttonClear = "Effacer"
+    
+    [[languages.fr.params.contact.email]]
+      title = "Courriel"
+      email = "david.beauchesne@hotmail.com"
+    
+    [[languages.fr.params.contact.phone]]
+      title = "Téléphone"
+      phone = "+1-514-553-4974"
+    
+    [[languages.fr.params.contact.address]]
+        title = "Adresse"
+        street = "2-775 Avenue Monk"
+        city = "Québec, QC, G1S 3M7"
+        country = "Canada"
+    
+    [languages.fr.params.navigation]
+      title = "inSileco"
+      subtitle = "conseil, formation et plus"
+      menu = "Menu"
+      
+    [[languages.fr.params.navigation.links]]
+      name = "Acceuil"
+      url = ""
+      
+    [[languages.fr.params.navigation.links]]
+      name = "A propos"
+      url = "about"
+
+    [[languages.fr.params.navigation.links]]
+      name = "Blogue"
+      url = "https://insileco.github.io/"
+      
+
+      
+      
+
+
+
 
 
 # Enter your tracking code to enable Google Analytics
@@ -9,6 +79,7 @@ googleAnalytics = ""
 
 # Enter your disqus shortname to enable comments
 disqusShortname = ""
+
 
 [params]
   # You can use Markdown syntax for urls [text](//url.to/source)
@@ -73,13 +144,14 @@ disqusShortname = ""
     #   url = "#"
 
 
-  # Banner section
-  [params.banner]
-    # To change the background image on the homepage banner, replace 'banner.jpg' in
-    # the 'static/img' folder.
-    title = "inSileco"
-    subtitle = "We help you do to that."
-    buttonText = "More?"
+    # Banner section
+    [params.banner]
+      # To change the background image on the homepage banner, replace 'banner.jpg' in
+      # the 'static/img' folder.
+      title = "inSileco"
+      subtitle = "We can help you do to achieve your golas."
+      buttonText = "More?"
+
 
 
   # Tiles Section
@@ -91,7 +163,7 @@ disqusShortname = ""
       title = "About"
       subtitle = "Our story"
       image = "pic01.jpg"
-      url = "blogs/aliquam"
+      url = "about"
 
     [[params.tiles.showcase]]
       title = "Who are we"
@@ -156,41 +228,43 @@ disqusShortname = ""
     url = "blogs"
 
 
-  # Contact section
-  [params.contact]
-    enable = true
-    buttonSend = "Send message"
-    buttonClear = "Clear"
+    # Contact section
+    [params.contact]
+      enable = true
+      buttonSend = "Send message"
+      buttonClear = "Clear"
 
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below and uncomment
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-    # formEmail = "example@domain.com"
+      # Since this template is static, the contact form uses www.formspree.io as a
+      # proxy. The form makes a POST request to their servers to send the actual
+      # email. Visitors can send up to a 1000 emails each month for free.
+      #
+      # What you need to do for the setup?
+      #
+      # - set your email address under 'email' below and uncomment
+      # - upload the generated site to your server
+      # - send a dummy email yourself to confirm your account
+      # - click the confirm link in the email from www.formspree.io
+      # - you're done. Happy mailing!
+      # formEmail = "example@domain.com"
 
-    # Contact Section
-    # You can add multiple emails, phone numbers, or addresses
-    # by copying the corresponding map with frontmatter code.
-    [[params.contact.email]]
-    title = "Email"
-    email = "david.beauchesne@hotmail.com"
+      # Contact Section
+      # You can add multiple emails, phone numbers, or addresses
+      # by copying the corresponding map with frontmatter code.
+      [[params.contact.email]]
+      title = "Email"
+      email = "example@domain.com"
 
-    [[params.contact.phone]]
-    title = "Phone"
-    phone = "+1-514-553-4974"
+      [[params.contact.phone]]
+      title = "Phone"
+      phone = "(000) 000-0000 x1234"
 
-    [[params.contact.address]]
-    title = "Address"
-    street = "2-775 Avenue Monk"
-    city = "Québec, QC, G1S 3M7"
-    country = "Canada"
+      [[params.contact.address]]
+      title = "Address"
+      street = "Street"
+      city = "City, ST 00000"
+      country = "Country"
+
+
 
   # Footer section
   [params.footer]
